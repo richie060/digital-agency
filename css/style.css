@@ -398,11 +398,12 @@ body{
 }
 @media (max-width: 700px) {
   .wrapper{
-    margin: 200px auto;
+    margin-top:  20px ;
+    margin-bottom: 20px;
   }
 }
 .wrapper .box{
-  width: 350px;
+  width: 400px;
   margin: 0 auto;
   position: relative;
   perspective: 1000px;
