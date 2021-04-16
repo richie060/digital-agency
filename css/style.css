@@ -471,9 +471,8 @@ body{
 
 /*newsletter*/
 form{
-  border: 1px solid #f1f1f1;
   font-family: Arial;
-  border: 
+ 
 }
 .container{
   padding:20px;
@@ -607,17 +606,16 @@ input[type=submit]:hover{
   background-position: center;
  }
 .bodtitle span{
-  color: green;
+  color: yellow;
   padding-left:  20px;
   font-weight: 1000;
 }
 .bodtitle h {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .bodtitle p{
   padding-top: 20px;
-  color: black;
   font-size: 20px;
 }
 
