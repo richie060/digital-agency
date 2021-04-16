@@ -312,7 +312,7 @@ nav input{
  /*     //  loader*/
 
 .bodtitle{
-  color: #fff;
+  color: red;
   background: url('../images/bg.jpeg') no-repeat;
   padding-top: 30px;
   background-size: cover;
