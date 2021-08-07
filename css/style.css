@@ -312,6 +312,7 @@ nav input{
  /*     //  loader*/
 
 .bodtitle{
+  color: #fff;
   background: url('../images/bg.jpeg') no-repeat;
   padding-top: 30px;
   background-size: cover;
@@ -333,7 +334,7 @@ nav input{
 
 .bodtitle p{
   padding-top: 20px;
-  color: red;
+  color: #ffffff;
   font-size: 20px;
 }
 .bodtitle .btnset{
@@ -397,12 +398,11 @@ body{
 }
 @media (max-width: 700px) {
   .wrapper{
-    margin-top:  20px ;
-    margin-bottom: 20px;
+    margin: 200px auto;
   }
 }
 .wrapper .box{
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   position: relative;
   perspective: 1000px;
@@ -471,8 +471,9 @@ body{
 
 /*newsletter*/
 form{
+  border: 1px solid #f1f1f1;
   font-family: Arial;
- 
+  border: 
 }
 .container{
   padding:20px;
@@ -603,20 +604,22 @@ input[type=submit]:hover{
 
 .bodtitle{
   color: #fff;
+  background: url('../images/homebg.jpeg') no-repeat;
   background-position: center;
  }
 .bodtitle span{
-  color: yellow;
+  color: green;
   padding-left:  20px;
   font-weight: 1000;
 }
 .bodtitle h {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .bodtitle p{
   padding-top: 20px;
-  font-size: 30px;
+  color: black;
+  font-size: 20px;
 }
 
 
