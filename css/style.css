@@ -13,6 +13,7 @@ nav{
   position: fixed;
   z-index: 99;
   width: 100%;
+  scroll-behavior: fixed;
   background: #242526;
 }
 nav .wrapper{
@@ -312,7 +313,6 @@ nav input{
  /*     //  loader*/
 
 .bodtitle{
-  color: #fff;
   background: url('../images/bg.jpeg') no-repeat;
   padding-top: 30px;
   background-size: cover;
@@ -325,8 +325,8 @@ nav input{
   padding-left:  20px;
   font-weight: 1000;
 }
-.bodtitle h {
-  color: #fff;
+.bodtitle h,h4{
+  color: #C5FB20;
   padding-top: 40px;
   font-size: 50px;
   font-weight: 1000;
@@ -334,7 +334,7 @@ nav input{
 
 .bodtitle p{
   padding-top: 20px;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
 }
 .bodtitle .btnset{
@@ -390,22 +390,35 @@ body{
   background: #f2f2f2;
 }
 .wrapper{
-  display: grid;
-  margin: 50px 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 50px 10px auto;
   padding-bottom: 50px;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 @media (max-width: 700px) {
   .wrapper{
-    margin: 200px auto;
+    margin-top:  20px ;
+    margin-bottom: 20px;
+  
   }
 }
 .wrapper .box{
-  width: 350px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 4px auto;
+  overflow: hidden;
+  width: 400px;
+  margin: 0px auto;
   position: relative;
   perspective: 1000px;
+
 }
 .wrapper .box .front-face{
   background: #fff;
@@ -471,9 +484,8 @@ body{
 
 /*newsletter*/
 form{
-  border: 1px solid #f1f1f1;
   font-family: Arial;
-  border: 
+ 
 }
 .container{
   padding:20px;
@@ -602,23 +614,21 @@ input[type=submit]:hover{
   text-align: left;
 }
 
-.bodtitle{
-  color: #fff;
-  background: url('../images/homebg.jpeg') no-repeat;
+.bodtitle{  color: #fff;
   background-position: center;
  }
 .bodtitle span{
-  color: green;
+  color: yellow;
   padding-left:  20px;
   font-weight: 1000;
 }
 .bodtitle h {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .bodtitle p{
+  border: 2px solid green;
   padding-top: 20px;
-  color: black;
   font-size: 20px;
 }
 
@@ -629,17 +639,23 @@ input[type=submit]:hover{
   }
 }
 
-@media screen and (max-width: 300px) {
+/*@media screen and (max-width: 300px) {
   .wrapper .box{ 
  width: 180px;
 }
 }
 @media screen and (max-width: 360px) {
-  .wrapper .box{ 
- width: 190px;
- padding-right: 0px;
+  .wrapper .box{  
+width: 190px;
+ margin:   0px;
+ height: auto;
+}*/
+/*.services-wrapper{
+  display: inline-block;
+  width: 100%;
+  border: 2px solid red;
 }
-
+*/
 
 
 }
@@ -680,14 +696,18 @@ html {
   height: 300px;
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
+  color: #fff;
 }
 .aboutsec h2{
   padding-top: 30px;
   font-size: 50px;
-}
 
+}
+.about-section p{
+  margin-top: 50px;
+  font-size: 20px;
+
+}
 .container {
   padding: 0 16px;
 }
@@ -926,4 +946,94 @@ html {
 }
 
 
+}
+
+
+/*contact us*/
+.contact-header{
+  margin-top: 30px;
+  min-height: 300px;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border:  2px dashed red;
+}
+section{
+    margin-top: 55px;
+}
+.cards{
+    background-color:  #00acee;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cards >h3{
+    font-size: 15px;
+}
+.cards >p{
+    font-size: 12px;
+    color: white;
+}
+.cards:hover{
+    box-shadow: 5px 8px 10px grey;
+}
+.cards >a{
+    color: white;
+}
+.social-media{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.social-media a img{
+    height: 100%;
+    border-radius: 50%;
+}
+.message{
+    text-align: center;
+    padding: 15px;
+}
+
+.gridmsg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.gridmsg input{
+    padding: 7px;
+    border: 0;
+    border-bottom:1px solid  grey;
+    box-shadow: 3px 5px 7px grey;
+    outline: none;
+    margin-bottom: 15px;
+}
+.gridmsg textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 3px 5px 7px grey;
+    border: 0;
+    padding: 7px;
+    outline: none;
+}
+.submitbtn{
+    text-align: center;
+    background-color: rgb(118, 20, 131);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    outline: none;
+    border: 0;
+    position: relative;
+    right: -100px;
+    margin-top: 10px;
+    
 }
